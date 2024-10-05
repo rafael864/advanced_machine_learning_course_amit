@@ -2,3 +2,5 @@
 ## content
 - python
 - data science
+- ds
+- machine learning(supervised - unsupervised)
