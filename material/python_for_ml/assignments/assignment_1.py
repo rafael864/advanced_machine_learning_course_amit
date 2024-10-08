@@ -22,7 +22,7 @@ else:
     print('invalid email')
 
 
-###task 2###
+###task 2,3,4###
 t=''
 answer_list=[]
 encoded_word_list=['###!!@mocleW EPGTQ!!!6789','&&&**$gnirtS PLIO!!@1234','##$$$@!yalpstcejorp EPUVT****9887']
@@ -34,13 +34,22 @@ for encoded_word in encoded_word_list:
             first_word=t
             t=''
     second_word=t
+    
+    t=''
     first = first_word[::-1]
-    second = second_word.replace('E','')
+    
+    if second_word == 'EPGTQ':
+        second = second_word.replace('E','')
+    elif second_word == 'PLIO':
+         second = second_word.replace('IO','EU')
+    else:
+         second = second_word.replace('EPU','APO')
+         
     word=first+' '+second
     answer_list.append(word)
 print(answer_list)
 
-
+###task 2###
 encoded_word='###!!@mocleW EPGTQ!!!6789'
 first = encoded_word[encoded_word.index('m'):encoded_word.index(' ')][::-1]
 second = encoded_word[encoded_word.index(' ')+1:encoded_word.index('Q')+1].replace('E','')
