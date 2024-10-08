@@ -1,18 +1,13 @@
 ###task 1###
-#given address
 address = 'Amit_ml@gmail.edu'
-
 #spliting user name, domain and domain ending
 x = address.split('@')
 y=x[1].split('.')
 
 #check if the domain is valid number of @ and .
 check_at = len(x)==2
-'''
-check_dotes = x[1].count('.')>0
-n=x[1].rindex(".")
-'''
 check_dotes = len(y)>=2
+
 if check_at and check_dotes :
     #assigning values to variables
     user_name = x[0]; domain = y[0]; domain_ending = y[1]
@@ -29,15 +24,22 @@ else:
 
 ###task 2###
 t=''
-words=[]
-encoded_word='###!!@mocleW EPGTQ!!!6789'
-for i in encoded_word:
-    if i.isalpha():
-        t+=i
-        print(i)
-    elif i == ' ':
-        words.append(t)
-        t=''
+answer_list=[]
+encoded_word_list=['###!!@mocleW EPGTQ!!!6789','&&&**$gnirtS PLIO!!@1234','##$$$@!yalpstcejorp EPUVT****9887']
+for encoded_word in encoded_word_list:
+    for i in encoded_word:
+        if i.isalpha():
+            t+=i
+        elif i == ' ':
+            first_word=t
+            t=''
+    second_word=t
+    first = first_word[::-1]
+    second = second_word.replace('E','')
+    word=first+' '+second
+    answer_list.append(word)
+print(answer_list)
+
 
 encoded_word='###!!@mocleW EPGTQ!!!6789'
 first = encoded_word[encoded_word.index('m'):encoded_word.index(' ')][::-1]
