@@ -1,0 +1,47 @@
+Task 1                                                                                                                                                                                                                                   ""Problem: Basic Calculator""
+Objective: Create a simple calculator program that can perform basic arithmetic operations: addition, subtraction, multiplication, and division.
+
+""Requirements:""
+------------------------
+""User Input:""
+
+The program should prompt the user to choose an operation from the following list:
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Exit
+Input Validation:
+
+Ensure that the user inputs valid numbers for the calculations. If the input is invalid (e.g., non-numeric), prompt the user to enter the numbers again.
+Performing Calculations:
+
+Based on the user's choice, the program should ask for two numbers and perform the selected operation.
+If the user selects division, check if the second number is zero to avoid division by zero errors.
+Looping:
+
+After each calculation, ask the user if they want to perform another calculation. If they answer "yes," return to the operation selection; if they answer "no," exit the program.
+Output:
+
+Display the result of the calculation in a user-friendly format.
+For example: "The result of adding 5 and 3 is 8."
+Exit Option:
+
+If the user chooses to exit, print a thank you message and terminate the program.
+
+Task-2
+ Folder Operations with Files
+In this exercise, we will implement a function that performs the following steps:
+
+Open a folder: The function will work on a folder specified by the user or a pre-defined folder.
+Create multiple files: A specified number of files will be created inside this folder.
+Check the number of files: The function will calculate and return the total number of files present in the folder after creation.
+Delete half of the files randomly: The function will delete approximately half of the files from the folder in a random manner.
+Check the result: After deleting the files, the function will again calculate and display the remaining number of files in the folder.
+
+Steps Breakdown:
+Open/Make a folder: This checks if the folder exists, if not, it creates one.
+Create files: Inside the folder, it generates the specified number of .txt files.
+Check file count: It counts how many files are in the folder after creation.
+Delete half the files randomly: Randomly selects and deletes half of the files.
+Final check: It then shows how many files are left.
