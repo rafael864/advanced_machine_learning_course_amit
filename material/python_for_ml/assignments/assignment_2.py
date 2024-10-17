@@ -155,8 +155,12 @@ def display():
     cr_fl = create_files(cr_fd)
     remove_r(cr_fd,cr_fl)
 
-#execution
+###execution
+
+##task1
+calc_process(numb_input(),numb_input(),calc_oper())
+
+##task2
 #pre_defined_path = "C:\Users\Lenovo\Desktop\amit"
 #folder_ name = "t2"
-calc_process(numb_input(),numb_input(),calc_oper())
 display()
