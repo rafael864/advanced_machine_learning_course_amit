@@ -92,8 +92,6 @@ def new_op(final_number):
         return new_op(final_number)
     
 
-#print('Welcom to R Calculator')
-#calc_process(numb_input(),numb_input(),calc_oper())
 
 ##task2
 import os,  random
@@ -157,6 +155,8 @@ def display():
     cr_fl = create_files(cr_fd)
     remove_r(cr_fd,cr_fl)
 
+#execution
 #pre_defined_path = "C:\Users\Lenovo\Desktop\amit"
 #folder_ name = "t2"
+calc_process(numb_input(),numb_input(),calc_oper())
 display()
