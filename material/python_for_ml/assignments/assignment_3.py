@@ -31,9 +31,6 @@ class ChatBot():
                 return random.choice(responses[key])
         return random.choice(responses["default"])
 
-    
-    
-
 # Run the chatbot
 if '__main__'==__name__: 
     ChatBot()
