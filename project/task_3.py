@@ -21,7 +21,6 @@ class cow(animal):
         print('low') 
     def describe(self):
         print('black and white')
-
 if __name__=='__main__':
     dog().make_sound()
     dog().describe()
