@@ -28,13 +28,13 @@ class bank_account():
             
     def check_acount(self):
         print(self.total_balance)        
-        
-mina_account = bank_account(50)
-mina_account.deposit(10)
-mina_account.deposit(24)
-mina_account.deposit(15)
-mina_account.withdraw(12)
-mina_account.withdraw(36)
-mina_account.check_acount()
-mina_account.withdraw(17)
-mina_account.check_acount()
+if __name__ == "__main__":        
+    mina_account = bank_account(50)
+    mina_account.deposit(10)
+    mina_account.deposit(24)
+    mina_account.deposit(15)
+    mina_account.withdraw(12)
+    mina_account.withdraw(36)
+    mina_account.check_acount()
+    mina_account.withdraw(17)
+    mina_account.check_acount()

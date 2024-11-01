@@ -7,5 +7,5 @@ def count_in_list(given_list):
         else:
             c_dict[i] = 1
     return c_dict
-
-print(count_in_list(given_list))
+if __name__ == "__main__":
+    print(count_in_list(given_list))
